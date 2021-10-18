@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 
-[RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
+[RequireComponent(typeof(NavMeshAgent))]
 
 public class TikTakBehaviour : MonoBehaviour
 {
@@ -20,6 +21,6 @@ public class TikTakBehaviour : MonoBehaviour
 
     void Update()
     {
-        GetComponent<UnityEngine.AI.NavMeshAgent>().SetDestination(destination);
+        GetComponent<NavMeshAgent>().SetDestination(destination);
     }
 }

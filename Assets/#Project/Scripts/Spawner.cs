@@ -19,7 +19,9 @@ public class Spawner : MonoBehaviour
     {
         while(true)
         {
-            
+            TikTakBehaviour tiktak = pool.Create(transform.position, transform. rotation);
+            tiktak.destination = TikTakDestination;
+            yield return new WaitForSeconds(delay); 
         }
 
 

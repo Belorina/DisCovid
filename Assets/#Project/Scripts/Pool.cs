@@ -29,6 +29,12 @@ public class Pool : MonoBehaviour
         return tiktak;
     }
 
+    public void Kill(TikTakBehaviour tiktak)
+    {
+       
+        tiktak.gameObject.SetActive(false);
+        tiktaks.Add(tiktak);
+    }
 
 
 }
