@@ -6,6 +6,7 @@ public class Pool : MonoBehaviour
 {
 
     public List<TikTakBehaviour> tiktaks = new List<TikTakBehaviour>();
+
     public GameObject tiktakPrefab;
 
     public TikTakBehaviour Create(Vector3 position, Quaternion rotation)

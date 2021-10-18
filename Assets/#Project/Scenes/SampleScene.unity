@@ -417,6 +417,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1549186189}
+  - {fileID: 1054536672}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -534,6 +535,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 45, z: 0}
+--- !u!1 &1054536671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1054536672}
+  - component: {fileID: 1054536673}
+  m_Layer: 0
+  m_Name: Pool (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1054536672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054536671}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 737971272}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1054536673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054536671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1a3553988d1de46a19750c2e241ed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiktaks: []
+  tiktakPrefab: {fileID: 2495974810143975983, guid: 34be31f6deedce546a0346beac334151, type: 3}
 --- !u!1 &1549186188
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,7 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4623987348d0e094694e67a4df167f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 394591906}
+  pool: {fileID: 1054536673}
   delay: 1
   TikTakDestination: {x: -6, y: 0, z: -6}
 --- !u!1 &1597223893
@@ -593,6 +639,7 @@ GameObject:
   - component: {fileID: 1597223897}
   - component: {fileID: 1597223896}
   - component: {fileID: 1597223895}
+  - component: {fileID: 1597223899}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -689,6 +736,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597223893}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1597223899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597223893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a69372004a5210478fc04640d94e3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pool: {fileID: 1054536673}
 --- !u!1 &1686288841
 GameObject:
   m_ObjectHideFlags: 0
