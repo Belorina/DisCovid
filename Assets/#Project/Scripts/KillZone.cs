@@ -12,9 +12,7 @@ public class KillZone : MonoBehaviour
 
        if (tiktak != null)
        {
-           
            tiktak.pool.Kill(tiktak);
-
 
        }
    }
@@ -22,7 +20,7 @@ public class KillZone : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = new Color(1, 0, 0, 0.5f);
-        Gizmos.DrawCube(transform.position, new Vector3(3, 3, 3));
+        Gizmos.DrawCube(transform.position, new Vector3(2.5f, 2.5f, 2.5f));
     }
 
 }
