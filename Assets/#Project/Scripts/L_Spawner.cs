@@ -32,6 +32,13 @@ public class L_Spawner : MonoBehaviour
 
     }
 
+    void OnDrawGizmos()
+    {
+        Gizmos.color =  new Color(0, 0, 1, 0.5f);
+        Gizmos.DrawSphere(transform.position, 1);
+    }
+
+
     // Update is called once per frame
     void Update()
     {

@@ -123,51 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 49f06873a8984a54ba977d07a6535530, type: 2}
---- !u!1 &394591905
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 394591907}
-  - component: {fileID: 394591906}
-  m_Layer: 0
-  m_Name: Left_Pool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &394591906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 394591905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc1a3553988d1de46a19750c2e241ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiks: []
-  tikPrefab: {fileID: 2495974810143975983, guid: 5894ecc5457fa994b9036b0c6ee6b9c2, type: 3}
---- !u!4 &394591907
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 394591905}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 702647296}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &531498735
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +247,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1686288843}
-  - {fileID: 394591907}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -398,7 +352,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 737971272}
-  - component: {fileID: 737971273}
   m_Layer: 0
   m_Name: Right_Tak
   m_TagString: Untagged
@@ -418,24 +371,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1549186189}
-  - {fileID: 1121356575}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &737971273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737971271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc1a3553988d1de46a19750c2e241ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiks: []
-  tikPrefab: {fileID: 0}
 --- !u!1 &852896475
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +488,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 45, z: 0}
---- !u!1 &1121356574
+--- !u!1 &1228897775
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -558,43 +496,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1121356575}
-  - component: {fileID: 1121356576}
+  - component: {fileID: 1228897777}
+  - component: {fileID: 1228897776}
   m_Layer: 0
-  m_Name: Right_Pool
+  m_Name: Pool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1121356575
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121356574}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 737971272}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1121356576
+--- !u!114 &1228897776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121356574}
+  m_GameObject: {fileID: 1228897775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e36cebbcc76167a4cac581152b566430, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d88dba9dbd53304b9e135d1d74ce20a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  taks: []
-  takPrefab: {fileID: 2495974810143975983, guid: 34be31f6deedce546a0346beac334151, type: 3}
+  tiktaks: []
+  tiktakPrefab: {fileID: 2495974810143975983, guid: 298db4873d835e74eb5fc04ec51da789, type: 3}
+--- !u!4 &1228897777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228897775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1549186188
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549186188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: 0, z: -12}
+  m_LocalPosition: {x: 12, y: 0, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 737971272}
@@ -638,7 +576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecdfb16b4750a0543a22fd5675bfb724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 0}
+  pool: {fileID: 1228897776}
   delay: 1
   TikTakDestination: {x: -6, y: 0, z: -6}
 --- !u!1 &1597223893
@@ -688,7 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a69372004a5210478fc04640d94e3fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 0}
+  pool: {fileID: 1228897776}
 --- !u!65 &1597223896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -763,7 +701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a69372004a5210478fc04640d94e3fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 0}
+  pool: {fileID: 1228897776}
 --- !u!1 &1686288841
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,7 +731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4623987348d0e094694e67a4df167f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 0}
+  pool: {fileID: 1228897776}
   delay: 1
   TikTakDestination: {x: -6, y: 0, z: -6}
 --- !u!4 &1686288843
