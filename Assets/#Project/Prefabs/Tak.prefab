@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2495974810912655860}
   - component: {fileID: -2813510695632271913}
   m_Layer: 0
-  m_Name: taktikPrefab
+  m_Name: Tak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0cce36df9519ca438f4fcfd9ea2faa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: {x: 0, y: 0, z: 0}
+  destination: {x: -6, y: 0, z: -6}
 --- !u!195 &2495974810912655860
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -10,15 +10,15 @@ public class TikTakBehaviour : MonoBehaviour
 {
     public Vector3 destination;
 
-    private Pool pool;
+    public R_Pool rpool;
+
 
     
     // Start is called before the first frame update
     void Start()
     {
-        pool = FindObjectOfType<Pool>();
+        rpool = FindObjectOfType<R_Pool>();
     }
-
     void Update()
     {
         GetComponent<NavMeshAgent>().SetDestination(destination);

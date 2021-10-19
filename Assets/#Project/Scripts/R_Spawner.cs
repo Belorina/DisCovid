@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class R_Spawner : MonoBehaviour
 {
 
-    public Pool pool;
+    public R_Pool rpool;
+    //public L_Pool lpool;
     public float delay = 1f;
     public Vector3 TikTakDestination;
 
@@ -19,8 +20,13 @@ public class Spawner : MonoBehaviour
     {
         while(true)
         {
-            TikTakBehaviour tiktak = pool.Create(transform.position, transform. rotation);
-            tiktak.destination = TikTakDestination;
+            // TikTakBehaviour tik = lpool.Create(transform.position, transform. rotation);
+            // tik.destination = TikTakDestination;
+
+            TikTakBehaviour tak = rpool.Create(transform.position, transform. rotation);
+            tak.destination = TikTakDestination;
+            tak.rpool = rpool;
+
             yield return new WaitForSeconds(delay); 
         }
 

@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class KillZone : MonoBehaviour
 {
-    public Pool pool;
+    public R_Pool rpool;
+    public L_Pool lpool;
+
 
     private void OnTriggerEnter(Collider other)
    {
-       TikTakBehaviour tiktak = other.GetComponent<TikTakBehaviour>();
+       TikTakBehaviour tik = other.GetComponent<TikTakBehaviour>();
+       TikTakBehaviour tak = other.GetComponent<TikTakBehaviour>();
 
-       if (tiktak != null)
+       if (tik != null)
        {
-           pool.Kill(tiktak);
+           tik.rpool.Kill(tik);
+           //lpool.Kill(tik);
+
        }
    }
 }

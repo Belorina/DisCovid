@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 394591907}
   - component: {fileID: 394591906}
   m_Layer: 0
-  m_Name: Pool
+  m_Name: Left_Pool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc1a3553988d1de46a19750c2e241ed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiktaks: []
-  tiktakPrefab: {fileID: 2495974810143975983, guid: 5894ecc5457fa994b9036b0c6ee6b9c2, type: 3}
+  tiks: []
+  tikPrefab: {fileID: 2495974810143975983, guid: 5894ecc5457fa994b9036b0c6ee6b9c2, type: 3}
 --- !u!4 &394591907
 Transform:
   m_ObjectHideFlags: 0
@@ -398,6 +398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 737971272}
+  - component: {fileID: 737971273}
   m_Layer: 0
   m_Name: TakTiks
   m_TagString: Untagged
@@ -417,10 +418,24 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1549186189}
-  - {fileID: 1054536672}
+  - {fileID: 1121356575}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &737971273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737971271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1a3553988d1de46a19750c2e241ed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiks: []
+  tikPrefab: {fileID: 0}
 --- !u!1 &852896475
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +460,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852896475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: -5}
+  m_LocalPosition: {x: -6, y: 0, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1597223894}
@@ -535,7 +550,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 45, z: 0}
---- !u!1 &1054536671
+--- !u!1 &1121356574
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -543,43 +558,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1054536672}
-  - component: {fileID: 1054536673}
+  - component: {fileID: 1121356575}
+  - component: {fileID: 1121356576}
   m_Layer: 0
-  m_Name: Pool (1)
+  m_Name: Right_Pool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1054536672
+--- !u!4 &1121356575
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054536671}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 1121356574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 737971272}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1054536673
+--- !u!114 &1121356576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054536671}
+  m_GameObject: {fileID: 1121356574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc1a3553988d1de46a19750c2e241ed1, type: 3}
+  m_Script: {fileID: 11500000, guid: e36cebbcc76167a4cac581152b566430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiktaks: []
-  tiktakPrefab: {fileID: 2495974810143975983, guid: 34be31f6deedce546a0346beac334151, type: 3}
+  taks: []
+  takPrefab: {fileID: 2495974810143975983, guid: 34be31f6deedce546a0346beac334151, type: 3}
 --- !u!1 &1549186188
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,7 +606,7 @@ GameObject:
   - component: {fileID: 1549186189}
   - component: {fileID: 1549186190}
   m_Layer: 0
-  m_Name: Spawner (1)
+  m_Name: Right_Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -605,7 +620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549186188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12, y: 0, z: -3}
+  m_LocalPosition: {x: 8, y: 0, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 737971272}
@@ -620,10 +635,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1549186188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4623987348d0e094694e67a4df167f4d, type: 3}
+  m_Script: {fileID: 11500000, guid: ecdfb16b4750a0543a22fd5675bfb724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 1054536673}
+  rpool: {fileID: 1121356576}
   delay: 1
   TikTakDestination: {x: -6, y: 0, z: -6}
 --- !u!1 &1597223893
@@ -673,7 +688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a69372004a5210478fc04640d94e3fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 394591906}
+  rpool: {fileID: 1121356576}
+  lpool: {fileID: 394591906}
 --- !u!65 &1597223896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -748,7 +764,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a69372004a5210478fc04640d94e3fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 1054536673}
+  rpool: {fileID: 1121356576}
+  lpool: {fileID: 394591906}
 --- !u!1 &1686288841
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,7 +777,7 @@ GameObject:
   - component: {fileID: 1686288843}
   - component: {fileID: 1686288842}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: Left_Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -778,7 +795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4623987348d0e094694e67a4df167f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 394591906}
+  lpool: {fileID: 394591906}
   delay: 1
   TikTakDestination: {x: -6, y: 0, z: -6}
 --- !u!4 &1686288843
@@ -789,7 +806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686288841}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 12}
+  m_LocalPosition: {x: -8, y: 0, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 702647296}

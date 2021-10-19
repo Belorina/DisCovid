@@ -4,38 +4,26 @@ using UnityEngine;
 
 public class Pool : MonoBehaviour
 {
-
     public List<TikTakBehaviour> tiktaks = new List<TikTakBehaviour>();
-
-    public GameObject tiktakPrefab;
+    public GameObject tikPrefab;
+    public GameObject takPrefab;
 
     public TikTakBehaviour Create(Vector3 position, Quaternion rotation)
     {
-        TikTakBehaviour tiktak = null;
-
-        if (tiktaks.Count > 0)
-        {
-            tiktak = tiktaks[0];
-            tiktaks.RemoveAt(0);
-            tiktak.transform.rotation = rotation;
-            tiktak.transform.position = position;
-            tiktak.gameObject.SetActive(true);
-        }
-        else
-        {
-            GameObject tiktakGo = Instantiate(tiktakPrefab, position, rotation);
-            tiktak = tiktakGo.GetComponent<TikTakBehaviour>();
-        }
-
-        return tiktak;
+        
     }
 
-    public void Kill(TikTakBehaviour tiktak)
+
+
+    // Start is called before the first frame update
+    void Start()
     {
-       
-        tiktak.gameObject.SetActive(false);
-        tiktaks.Add(tiktak);
+        
     }
 
-
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
