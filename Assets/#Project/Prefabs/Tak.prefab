@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -2813510695632271913}
   m_Layer: 0
   m_Name: Tak
-  m_TagString: Untagged
+  m_TagString: TakTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {x: -6, y: 0, z: -6}
+  pool: {fileID: 0}
 --- !u!195 &2495974810912655860
 NavMeshAgent:
   m_ObjectHideFlags: 0

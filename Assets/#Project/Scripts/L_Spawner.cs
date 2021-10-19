@@ -14,6 +14,8 @@ public class L_Spawner : MonoBehaviour
     void Start()
     {
         StartCoroutine(Spawn());
+
+        
     }
 
     private IEnumerator Spawn()

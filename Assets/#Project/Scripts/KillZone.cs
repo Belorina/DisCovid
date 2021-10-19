@@ -8,13 +8,13 @@ public class KillZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
    {
-       TikTakBehaviour tik = other.GetComponent<TikTakBehaviour>();
-       TikTakBehaviour tak = other.GetComponent<TikTakBehaviour>();
+       TikTakBehaviour tiktak = other.GetComponent<TikTakBehaviour>();
 
-       if (tik != null)
+       if (tiktak != null)
        {
-           tik.pool.Kill(tik);
-           //lpool.Kill(tik);
+           
+           tiktak.pool.Kill(tiktak);
+
 
        }
    }
