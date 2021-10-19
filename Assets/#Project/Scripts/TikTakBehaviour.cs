@@ -10,14 +10,14 @@ public class TikTakBehaviour : MonoBehaviour
 {
     public Vector3 destination;
 
-    public R_Pool rpool;
+    public Pool pool;
 
 
     
     // Start is called before the first frame update
     void Start()
     {
-        rpool = FindObjectOfType<R_Pool>();
+        pool = FindObjectOfType<Pool>();
     }
     void Update()
     {

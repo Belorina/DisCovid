@@ -6,7 +6,7 @@ public class L_Spawner : MonoBehaviour
 {
 
     //public R_Pool rpool;
-    public L_Pool lpool;
+    public Pool pool;
     public float delay = 1f;
     public Vector3 TikTakDestination;
 
@@ -20,7 +20,7 @@ public class L_Spawner : MonoBehaviour
     {
         while(true)
         {
-            TikTakBehaviour tik = lpool.Create(transform.position, transform. rotation);
+            TikTakBehaviour tik = pool.Create(transform.position, transform. rotation);
             tik.destination = TikTakDestination;
 
             // TikTakBehaviour tak = rpool.Create(transform.position, transform. rotation);

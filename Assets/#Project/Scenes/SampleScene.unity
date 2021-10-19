@@ -274,7 +274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702647296}
   m_Layer: 0
-  m_Name: TikTaks
+  m_Name: Left_TIK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 737971272}
   - component: {fileID: 737971273}
   m_Layer: 0
-  m_Name: TakTiks
+  m_Name: Right_Tak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -638,7 +638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecdfb16b4750a0543a22fd5675bfb724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rpool: {fileID: 1121356576}
+  pool: {fileID: 0}
   delay: 1
   TikTakDestination: {x: -6, y: 0, z: -6}
 --- !u!1 &1597223893
@@ -688,8 +688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a69372004a5210478fc04640d94e3fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rpool: {fileID: 1121356576}
-  lpool: {fileID: 394591906}
+  pool: {fileID: 0}
 --- !u!65 &1597223896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -764,8 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a69372004a5210478fc04640d94e3fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rpool: {fileID: 1121356576}
-  lpool: {fileID: 394591906}
+  pool: {fileID: 0}
 --- !u!1 &1686288841
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,7 +793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4623987348d0e094694e67a4df167f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lpool: {fileID: 394591906}
+  pool: {fileID: 0}
   delay: 1
   TikTakDestination: {x: -6, y: 0, z: -6}
 --- !u!4 &1686288843

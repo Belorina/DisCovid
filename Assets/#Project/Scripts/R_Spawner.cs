@@ -5,8 +5,8 @@ using UnityEngine;
 public class R_Spawner : MonoBehaviour
 {
 
-    public R_Pool rpool;
-    //public L_Pool lpool;
+    public Pool pool;
+    
     public float delay = 1f;
     public Vector3 TikTakDestination;
 
@@ -23,9 +23,9 @@ public class R_Spawner : MonoBehaviour
             // TikTakBehaviour tik = lpool.Create(transform.position, transform. rotation);
             // tik.destination = TikTakDestination;
 
-            TikTakBehaviour tak = rpool.Create(transform.position, transform. rotation);
+            TikTakBehaviour tak = pool.Create(transform.position, transform. rotation);
             tak.destination = TikTakDestination;
-            tak.rpool = rpool;
+            tak.pool = pool;
 
             yield return new WaitForSeconds(delay); 
         }

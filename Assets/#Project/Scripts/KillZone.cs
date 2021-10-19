@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class KillZone : MonoBehaviour
 {
-    public R_Pool rpool;
-    public L_Pool lpool;
-
+    public Pool pool;
 
     private void OnTriggerEnter(Collider other)
    {
@@ -15,7 +13,7 @@ public class KillZone : MonoBehaviour
 
        if (tik != null)
        {
-           tik.rpool.Kill(tik);
+           tik.pool.Kill(tik);
            //lpool.Kill(tik);
 
        }
