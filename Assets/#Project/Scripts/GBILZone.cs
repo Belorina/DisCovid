@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillZone : MonoBehaviour
+public class GBILZone : MonoBehaviour
 {
-    public Pool pool;
+    private Pool pool;
 
     private void OnTriggerEnter(Collider other)
    {
@@ -20,7 +20,7 @@ public class KillZone : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = new Color(1, 0, 0, 0.5f);
-        Gizmos.DrawCube(transform.position, new Vector3(2.5f, 2.5f, 2.5f));
+        Gizmos.DrawCube(transform.position, new Vector3(3f, 3f, 3f));
     }
 
 }
