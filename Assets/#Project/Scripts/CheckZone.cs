@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CheckZone : MonoBehaviour
 {
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Not_Masked"))
@@ -13,15 +12,14 @@ public class CheckZone : MonoBehaviour
         }
 
         //score
-
-        
-
     }
 
-    // void OnDrawGizmos()
-    // {
-    //     Gizmos.color = new Color(1, 0, 0, 0.5f);
-    //     Gizmos.DrawCube(transform.position, new Vector3(1f, 1f, 1f));
-    // }
+    void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(0, 1, 0, 0.5f);
+        Gizmos.DrawCube(transform.position, new Vector3(3f, 3f, 3f));
+    }
 
+
+     
 }

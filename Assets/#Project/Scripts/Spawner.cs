@@ -7,6 +7,9 @@ public class Spawner : MonoBehaviour
     public Pool pool; 
     public float delay = 1f;
     public Vector3 TikTakDestination;
+    public TargetPoint[] targetPoints;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +22,7 @@ public class Spawner : MonoBehaviour
         while(true)
         {
             TikTakBehaviour tiktak = pool.Create(transform.position, transform.rotation);
-            tiktak.destination = TikTakDestination;
+            tiktak.targetPoints = targetPoints;
             yield return new WaitForSeconds(delay);
         }
     }
