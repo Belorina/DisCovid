@@ -23,6 +23,7 @@ public class Pool : MonoBehaviour
         {
             GameObject tiktakGo = Instantiate(tiktakPrefab, position, rotation);
             tiktak = tiktakGo.GetComponent<TikTakBehaviour>();
+            
             tiktak.pool = this;
         }
 

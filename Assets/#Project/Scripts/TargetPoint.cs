@@ -13,7 +13,9 @@ public class TargetPoint : MonoBehaviour
 
     public Vector3 GivePoint()
     {
-        Vector3 point = Random.insideUnitSphere * radius;
+        //Vector3 point = Random.insideUnitSphere * radius;
+        Vector3 point = Vector3.zero;
+
         point.z = point.y;
         point.y = 0;
 

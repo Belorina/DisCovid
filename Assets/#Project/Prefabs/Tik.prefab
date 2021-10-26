@@ -128,8 +128,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0cce36df9519ca438f4fcfd9ea2faa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoints: []
+  targetPoints:
+  - {fileID: 0}
+  - {fileID: 0}
   destination: {x: -6, y: 0, z: -6}
+  TikTakSpeed: 2
   pool: {fileID: 0}
 --- !u!195 &2495974810912655860
 NavMeshAgent:

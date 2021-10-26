@@ -24,7 +24,7 @@ public class TikTakBehaviour : MonoBehaviour
     {
 
         agent = GetComponent<NavMeshAgent>();
-        //agent.autoBraking = false;                  // allows for continuous movement between points
+        agent.autoBraking = false;                  // allows for continuous movement between points
 
         //agent.avoidancePriority = Random.Range(1, 100);
         //agent.speed = Random.Range(1f, 10f);
