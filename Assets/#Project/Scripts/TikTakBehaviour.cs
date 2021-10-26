@@ -14,9 +14,7 @@ public class TikTakBehaviour : MonoBehaviour
     private int indexNextDestination = -1;
     public Vector3 destination;
 
-    //public Transform[] targets;
-    //public int destTarget = 0;
-
+    public float TikTakSpeed = 2f;
 
     public Pool pool;
 
@@ -26,40 +24,24 @@ public class TikTakBehaviour : MonoBehaviour
     {
 
         agent = GetComponent<NavMeshAgent>();
-        agent.autoBraking = false;                  // allows for continuous movement between points
+        //agent.autoBraking = false;                  // allows for continuous movement between points
 
         //agent.avoidancePriority = Random.Range(1, 100);
-        agent.speed = Random.Range(1f, 10f);
+        //agent.speed = Random.Range(1f, 10f);
+        TikTakSpeed = agent.speed;
 
-        //destination = TargetPoint.
+
     }
 
     void Update()
     {
-        // // Choose the next destination point when the agent gets
-        // // close to the current one.
-        // if (!agent.pathPending && agent.remainingDistance < 0.5f)
-        //     GotoNextTarget();
-
         if (agent.remainingDistance <= agent.stoppingDistance)
         {
             NextDestination();
         }
-
-
     }
     private void NextDestination()
     {
-        // // Returns if no targets have been set up
-        // if (targets.Length == 0)
-        //     return;
-
-        // // Set the agent to go to the currently selected destination.
-        // agent.destination = targets[destTarget].position;
-
-        // // Choose the next point in the array as the destination,
-        // // cycling to the start if necessary.
-        // destTarget = (destTarget + 1) % targets.Length;
 
         indexNextDestination++;
         indexNextDestination = indexNextDestination % targetPoints.Length;
