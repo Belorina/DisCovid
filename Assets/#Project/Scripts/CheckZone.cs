@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class CheckZone : MonoBehaviour
 {
+    private bool nearSecu;
+
+    void Update()
+    {
+        if (nearSecu && Input.GetKeyUp(KeyCode.Space))
+        {
+            print("Space key was released - on time - .");
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        // if (other.gameObject.CompareTag("Not_Masked"))
-        // {
-        //     print("he is not masked!");
-        // }
+        if (other.gameObject.CompareTag("Not_Masked"))
+        {
+            nearSecu = true;
+        }
 
         //score
     }
+
+    private void OnTriggerExit (Collider other)
+    {
+        if (other.gameObject.CompareTag("Not_Masked"))
+        {
+            nearSecu = false;
+        }
+    }
+
 
     void OnDrawGizmos()
     {
@@ -21,5 +40,5 @@ public class CheckZone : MonoBehaviour
     }
 
 
-     
+
 }
