@@ -6,10 +6,10 @@ public class CheckZone : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Not_Masked"))
-        {
-            print("he is not masked!");
-        }
+        // if (other.gameObject.CompareTag("Not_Masked"))
+        // {
+        //     print("he is not masked!");
+        // }
 
         //score
     }

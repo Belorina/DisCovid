@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -2813510695632271913}
   m_Layer: 0
   m_Name: Tik
-  m_TagString: TikTag
+  m_TagString: Not_Masked
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
