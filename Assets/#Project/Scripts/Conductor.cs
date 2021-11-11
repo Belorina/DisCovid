@@ -48,6 +48,10 @@ public class Conductor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //determine how many seconds since the song started
+        songPosition = (float)(AudioSettings.dspTime - dspSongTime);
 
+        //determine how many beats since the song started
+        songPositionInBeats = songPosition / secPerBeat;
     }
 }
