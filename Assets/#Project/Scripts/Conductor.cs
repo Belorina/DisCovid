@@ -17,7 +17,7 @@ public class Conductor : MonoBehaviour
     public float songPosition;
 
     //Current song position, beats 
-    public float songPositioninBeats;
+    public float songPositionInBeats;
 
     //How many sec have passed since the song started
     public float dspSongTime;
