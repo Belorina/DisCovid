@@ -38,8 +38,7 @@ public class CheckZone : MonoBehaviour
             nearSecu = true;
             check = false;
         }
-
-        if (other.gameObject.CompareTag("Not_Masked"))
+        else
         {
             nearSecu = true;
             check = true;

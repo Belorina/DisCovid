@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class RightSpawner : MonoBehaviour
 {
-    
+
     ObjectPooler objectPooler;
 
+
+    public float radius = 1f;   // for gizmos
 
     private void Start()
     {
         objectPooler = ObjectPooler.Instance;
     }
-    void FixedUpdate()
+
+    void Update()
     {
         objectPooler.SpawnFromPool("Right", transform.position, Quaternion.identity);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(1f, 0.5f, 0.9f, 0.4f);
+        Gizmos.DrawSphere(transform.position, radius);
     }
 }

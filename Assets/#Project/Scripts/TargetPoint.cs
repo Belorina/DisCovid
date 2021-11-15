@@ -10,6 +10,8 @@ public class TargetPoint : MonoBehaviour
 
     private Vector3 position;
 
+    public TargetPoint[] targetPoints;
+
 
     public Vector3 GivePoint()
     {
