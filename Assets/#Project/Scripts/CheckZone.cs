@@ -2,9 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// near secu && not masked  - if space then plus punt (score) / if no space minus point (score)
+// near secu && masked - if space then then minus point (score) / if no space plus punt (score)
+
 public class CheckZone : MonoBehaviour
 {
     private bool nearSecu;
+
+    private bool check;
+
+    public int score;
 
     void Update()
     {
@@ -12,13 +19,30 @@ public class CheckZone : MonoBehaviour
         {
             print("Space key was released - on time - .");
         }
+
+        if (nearSecu && check && Input.GetKeyUp(KeyCode.Space))
+        {
+            //score +
+
+            print("Space key detected ! Ha not masked! ");
+
+            // change targetpoint to TZ3
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
+    
+        if (other.gameObject.CompareTag("TikTak"))
+        {
+            nearSecu = true;
+            check = false;
+        }
+
         if (other.gameObject.CompareTag("Not_Masked"))
         {
             nearSecu = true;
+            check = true;
         }
 
         //score
@@ -26,7 +50,7 @@ public class CheckZone : MonoBehaviour
 
     private void OnTriggerExit (Collider other)
     {
-        if (other.gameObject.CompareTag("Not_Masked"))
+        if (other.gameObject.CompareTag("TikTak"))
         {
             nearSecu = false;
         }

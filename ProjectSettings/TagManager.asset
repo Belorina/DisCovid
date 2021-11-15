@@ -9,6 +9,7 @@ TagManager:
   - LeftPool
   - RightPool
   - Not_Masked
+  - TikTak
   layers:
   - Default
   - TransparentFX

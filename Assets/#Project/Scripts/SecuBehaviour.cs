@@ -5,7 +5,7 @@ using UnityEngine;
 // ---- Secu Check ----
 // can you pass? filter positive / negative 
 // if yes - go 
-// if no, stop poof 
+// if no, targetzone3 
 
 public class SecuBehaviour : MonoBehaviour
 {

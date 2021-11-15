@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+// if "gotcha_not_Masked" then taargetzone3  
+
+
 
 [RequireComponent(typeof(NavMeshAgent))]
 
@@ -12,6 +15,7 @@ public class TikTakBehaviour : MonoBehaviour
 
     public TargetPoint[] targetPoints = new TargetPoint[0];
     private int indexNextDestination = -1;
+
     public Vector3 destination;
 
     public float TikTakSpeed = 2f;
@@ -29,16 +33,18 @@ public class TikTakBehaviour : MonoBehaviour
         //agent.avoidancePriority = Random.Range(1, 100);
         //agent.speed = Random.Range(1f, 10f);
         TikTakSpeed = agent.speed;
-
-
     }
 
     void Update()
     {
+        agent.Move(transform.forward * Time.deltaTime);
+
         if (agent.remainingDistance <= agent.stoppingDistance)
         {
             NextDestination();
         }
+
+
     }
     private void NextDestination()
     {

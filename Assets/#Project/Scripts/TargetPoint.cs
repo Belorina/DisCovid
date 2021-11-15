@@ -8,7 +8,7 @@ public class TargetPoint : MonoBehaviour
     [Range(0.1f, 10f)]
     public float radius = 1f;
 
-    public Vector3 position;
+    private Vector3 position;
 
 
     public Vector3 GivePoint()

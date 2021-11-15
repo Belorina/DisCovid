@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// spawn takVariant ( tag = Not_Masked) on beat 
+
+
 public class Pool : MonoBehaviour
 {
     public List<TikTakBehaviour> tiktaks = new List<TikTakBehaviour>();
     public GameObject tiktakPrefab;
+    //public GameObject tiktakPrefabVariant;
 
     public TikTakBehaviour Create(Vector3 position, Quaternion rotation)
     {
