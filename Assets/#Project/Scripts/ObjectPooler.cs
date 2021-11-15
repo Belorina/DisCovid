@@ -12,6 +12,17 @@ public class ObjectPooler: MonoBehaviour
         public int size;
     }
 
+
+    #region Singleton 
+    public static ObjectPooler Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    #endregion
+
     public List<Pooling> pools;
     public Dictionary<string, Queue<GameObject>> poolDictionary;
 
@@ -55,6 +66,12 @@ public class ObjectPooler: MonoBehaviour
         objectToSpawn.transform.position = position;
         objectToSpawn.transform.rotation = rotation;
 
+        IPooledObject pooledObj = objectToSpawn.GetComponent<IPooledObject>();
+
+        if (pooledObj != null)
+        {
+            pooledObj.OnObjectSpawn();
+        }
 
         // add back to queue
         poolDictionary[tag].Enqueue(objectToSpawn);
