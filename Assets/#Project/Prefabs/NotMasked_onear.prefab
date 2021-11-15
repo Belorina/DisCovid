@@ -17,8 +17,8 @@ GameObject:
   - component: {fileID: 2495974810912655860}
   - component: {fileID: -2813510695632271913}
   m_Layer: 0
-  m_Name: TikTak
-  m_TagString: Untagged
+  m_Name: NotMasked_onear
+  m_TagString: NotMasked_onear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d5787a0a40e49774e9b58dbe737cadd9, type: 2}
+  - {fileID: 2100000, guid: 695639cf12926234db6583edd8024f3c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -130,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPoints: []
   destination: {x: -6, y: 0, z: -6}
+  TikTakSpeed: 2
   pool: {fileID: 0}
 --- !u!195 &2495974810912655860
 NavMeshAgent:

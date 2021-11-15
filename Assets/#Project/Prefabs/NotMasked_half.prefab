@@ -13,12 +13,12 @@ GameObject:
   - component: {fileID: 2495974810143975953}
   - component: {fileID: 2495974810143975982}
   - component: {fileID: 9092050470913993690}
-  - component: {fileID: 2495974810912655859}
-  - component: {fileID: 2495974810912655860}
   - component: {fileID: -2813510695632271913}
+  - component: {fileID: 2495974810912655860}
+  - component: {fileID: 2495974810912655859}
   m_Layer: 0
-  m_Name: Tak
-  m_TagString: Masked
+  m_Name: NotMasked_half
+  m_TagString: NotMasked_half
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1817da0fba1ceff4787a9d8c51bba19d, type: 2}
+  - {fileID: 2100000, guid: c050afba3716b3b45afda5b2c7752a61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -116,24 +116,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2495974810912655859
-MonoBehaviour:
+--- !u!136 &-2813510695632271913
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2495974810143975983}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0cce36df9519ca438f4fcfd9ea2faa2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  destination: {x: -6, y: 0, z: -6}
-  TikTakSpeed: 2
-  pool: {fileID: 0}
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &2495974810912655860
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -156,17 +152,19 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &-2813510695632271913
-CapsuleCollider:
+--- !u!114 &2495974810912655859
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2495974810143975983}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0cce36df9519ca438f4fcfd9ea2faa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPoints: []
+  destination: {x: -6, y: 0, z: -6}
+  TikTakSpeed: 2
+  pool: {fileID: 0}

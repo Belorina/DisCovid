@@ -17,8 +17,8 @@ GameObject:
   - component: {fileID: 2495974810912655860}
   - component: {fileID: -2813510695632271913}
   m_Layer: 0
-  m_Name: Tak
-  m_TagString: Masked
+  m_Name: NotMasked_none
+  m_TagString: NotMasked_none
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1817da0fba1ceff4787a9d8c51bba19d, type: 2}
+  - {fileID: 2100000, guid: 5bbf5a229d299474ab42279253b564a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -128,9 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0cce36df9519ca438f4fcfd9ea2faa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoints:
-  - {fileID: 0}
-  - {fileID: 0}
+  targetPoints: []
   destination: {x: -6, y: 0, z: -6}
   TikTakSpeed: 2
   pool: {fileID: 0}

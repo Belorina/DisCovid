@@ -4,12 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - TikTag
-  - TakTag
   - LeftPool
   - RightPool
-  - Not_Masked
   - TikTak
+  - Masked
+  - NotMasked_none
+  - NotMasked_half
+  - NotMasked_onear
   layers:
   - Default
   - TransparentFX

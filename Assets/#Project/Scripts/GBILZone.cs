@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// get back in line if #masked 
+// Kill if ! #masked 
+
 public class GBILZone : MonoBehaviour
 {
     private Pool pool;
