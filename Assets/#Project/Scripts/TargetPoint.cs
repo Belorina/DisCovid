@@ -5,16 +5,17 @@ using UnityEngine;
 public class TargetPoint : MonoBehaviour
 {
 
-    [Range(0.1f, 10f)]
+    //[Range(0.1f, 10f)]
     private float radius = 1f;
 
-    private Vector3 position;
+    public Vector3 position;
 
     public TargetPoint[] targetPoints;
 
 
     public Vector3 GivePoint()
     {
+        print("giving point");
         //Vector3 point = Random.insideUnitSphere * radius;
         Vector3 point = Vector3.zero;
 

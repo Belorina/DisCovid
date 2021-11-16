@@ -453,10 +453,10 @@ MonoBehaviour:
   pools:
   - tag: Left
     prefab: {fileID: 2495974810143975983, guid: a2f3786cd47764c4486caeb6076d6159, type: 3}
-    size: 2
+    size: 10
   - tag: Right
     prefab: {fileID: 2495974810143975983, guid: 26438354ed2f9e547aae2fc45040ebd5, type: 3}
-    size: 2
+    size: 10
 --- !u!4 &218330178
 Transform:
   m_ObjectHideFlags: 0
@@ -4195,6 +4195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPooler: {fileID: 0}
+  delay: 1
 --- !u!114 &1508528509
 MonoBehaviour:
   m_ObjectHideFlags: 0

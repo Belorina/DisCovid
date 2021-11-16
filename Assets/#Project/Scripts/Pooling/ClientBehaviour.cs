@@ -6,14 +6,15 @@ using UnityEngine.AI;
 public class ClientBehaviour : MonoBehaviour, IPooledObject
 
 {
-[SerializeField]
+    [SerializeField]
     private NavMeshAgent agent;
 
     public float clientSpeed = 2f;
 
+    [SerializeField]
     private int indexNextDestination = -1;
 
-    public TargetPoint[] targetPoints;
+    public TargetPoint[] targetPoints = new TargetPoint[0];
 
     private Vector3 destination;
 
@@ -29,13 +30,15 @@ public class ClientBehaviour : MonoBehaviour, IPooledObject
 
     void update()
     {
+        //agent.Move(transform.forward * Time.deltaTime);
+
         if (agent.remainingDistance <= agent.stoppingDistance)
         {
             NextDestination();
         }
     }
 
-    private void NextDestination()
+    public void NextDestination()
     {
 
         indexNextDestination++;
@@ -48,7 +51,7 @@ public class ClientBehaviour : MonoBehaviour, IPooledObject
 
     public void OnObjectSpawn()
     {
-        agent.Move(transform.forward * Time.deltaTime);
+        //agent.Move(transform.forward * Time.deltaTime);
 
     }
 }
