@@ -13,7 +13,7 @@ public class ClientBehaviour : MonoBehaviour, IPooledObject
 
     private int indexNextDestination = -1;
 
-    public TargetPoint[] targetPoints;
+    private TargetPoint[] targetPoints;
 
     private Vector3 destination;
 

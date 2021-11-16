@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class RightSpawner : MonoBehaviour
 {
-
     ObjectPooler objectPooler;
-
 
     public float radius = 1f;   // for gizmos
 
@@ -22,7 +20,7 @@ public class RightSpawner : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = new Color(1f, 0.5f, 0.9f, 0.4f);
+        Gizmos.color = new Color(0f, 1f, 1f, 0.4f);
         Gizmos.DrawSphere(transform.position, radius);
     }
 }

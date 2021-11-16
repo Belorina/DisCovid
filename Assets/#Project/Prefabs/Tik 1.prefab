@@ -166,4 +166,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 2495974810912655860}
   clientSpeed: 2
-  targetPoints: []
+  targetPoints:
+  - {fileID: 0}
+  - {fileID: 0}

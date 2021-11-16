@@ -421,56 +421,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194013510}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &218330176
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 218330178}
-  - component: {fileID: 218330177}
-  m_Layer: 0
-  m_Name: ObjcetPooler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &218330177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218330176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3c0740c081c610459f2fd71b906bc82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pools:
-  - tag: Cube
-    prefab: {fileID: 3879737810203355279, guid: d272eec0c2d664b439e4e03e41a2cdb6, type: 3}
-    size: 10
-  - tag: Sphere
-    prefab: {fileID: 1739297700914406306, guid: 6abd98da4a7c2f947ba5b9c826d7604a, type: 3}
-    size: 3
---- !u!4 &218330178
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218330176}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.18, y: 1.55, z: -6.04}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &229258102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,6 +1207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1
+  targetPoints: []
 --- !u!1 &436517023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1953,49 +1904,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &725137177
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 725137179}
-  - component: {fileID: 725137178}
-  m_Layer: 0
-  m_Name: SphereSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &725137178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725137177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1416fecb834b9642b342ecc8fb8f170, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &725137179
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725137177}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.04, y: 0.66, z: -6.95}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &737971271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,6 +1980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1
+  targetPoints: []
 --- !u!1 &762006148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,9 +2027,7 @@ MonoBehaviour:
   pool: {fileID: 841727637}
   delay: 1
   TikTakDestination: {x: -6, y: 0, z: -6}
-  targetPoints:
-  - {fileID: 754628170}
-  - {fileID: 389821066}
+  spawn: {fileID: 754628170}
 --- !u!1 &818617013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2835,6 +2742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1
+  targetPoints: []
 --- !u!1 &1045847352
 GameObject:
   m_ObjectHideFlags: 0
@@ -3290,49 +3198,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104726387}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1115610424
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1115610426}
-  - component: {fileID: 1115610425}
-  m_Layer: 0
-  m_Name: CubeSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1115610425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115610424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03e48c91a09307a4695aa0b8f9c40bdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1115610426
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115610424}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.24, y: 0.56, z: 0.51}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1116733334
 GameObject:
   m_ObjectHideFlags: 0
@@ -3757,6 +3622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1
+  targetPoints: []
 --- !u!1 &1319707765
 GameObject:
   m_ObjectHideFlags: 0
@@ -5326,6 +5192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1
+  targetPoints: []
 --- !u!1 &1925879872
 GameObject:
   m_ObjectHideFlags: 0
@@ -6230,6 +6097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1
+  targetPoints: []
 --- !u!1 &2040272651
 GameObject:
   m_ObjectHideFlags: 0
@@ -6533,6 +6401,4 @@ MonoBehaviour:
   pool: {fileID: 270874108}
   delay: 1
   TikTakDestination: {x: -6, y: 0, z: -6}
-  targetPoints:
-  - {fileID: 2038527464}
-  - {fileID: 1008006170}
+  spawn: {fileID: 2038527464}
