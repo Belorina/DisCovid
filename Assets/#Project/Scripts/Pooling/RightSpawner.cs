@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class RightSpawner : MonoBehaviour
 {
+    [SerializeField]
+    
     ObjectPooler objectPooler;
 
-    public float radius = 1f;   // for gizmos
+    private float radius = 1f;   // for gizmos
 
     private void Start()
     {

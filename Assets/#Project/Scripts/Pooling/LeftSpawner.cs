@@ -4,18 +4,31 @@ using UnityEngine;
 
 public class LeftSpawner : MonoBehaviour
 {
+    [SerializeField]
     ObjectPooler objectPooler;
 
-    public float radius = 1f;   // for gizmos
+    private float radius = 1f;   // for gizmos
+
+    public float delay = 1f;    // spawning delay 
+
 
     private void Start()
     {
         objectPooler = ObjectPooler.Instance;
+
+        StartCoroutine(delaySpawn());
     }
 
-    void Update()
+    private IEnumerator delaySpawn()
     {
-        objectPooler.SpawnFromPool("Left", transform.position, Quaternion.identity);
+        while (true)
+        {
+            objectPooler.SpawnFromPool("Left", transform.position, Quaternion.identity);
+
+
+            yield return new WaitForSeconds(delay);
+        }
+
     }
 
     private void OnDrawGizmos()

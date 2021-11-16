@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectPooler: MonoBehaviour
+public class ObjectPooler : MonoBehaviour
 {
+
     [System.Serializable]
     public class Pooling
     {
-        public string tag; 
+        public string tag;
         public GameObject prefab;
         public int size;
     }
@@ -26,10 +27,13 @@ public class ObjectPooler: MonoBehaviour
     public List<Pooling> pools;
     public Dictionary<string, Queue<GameObject>> poolDictionary;
 
+    
+
 
     // Start is called before the first frame update
     void Start()
     {
+        //dict for pool
         poolDictionary = new Dictionary<string, Queue<GameObject>>();
 
         // adding to dict
@@ -37,11 +41,11 @@ public class ObjectPooler: MonoBehaviour
         {
             Queue<GameObject> objectPool = new Queue<GameObject>();
 
-            for (int i = 0; i < pool.size; i ++)
+            for (int i = 0; i < pool.size; i++)
             {
                 GameObject obj = Instantiate(pool.prefab);
                 obj.SetActive(false);
-                objectPool.Enqueue(obj);
+                objectPool.Enqueue(obj);        // adding obj into pool
             }
 
             // adding pool to dict
@@ -60,7 +64,7 @@ public class ObjectPooler: MonoBehaviour
             return null;
         }
 
-        GameObject objectToSpawn =  poolDictionary[tag].Dequeue();
+        GameObject objectToSpawn = poolDictionary[tag].Dequeue();      // removing from queue 
 
         objectToSpawn.SetActive(true);
         objectToSpawn.transform.position = position;
@@ -75,6 +79,8 @@ public class ObjectPooler: MonoBehaviour
 
         // add back to queue
         poolDictionary[tag].Enqueue(objectToSpawn);
+        
+        print(objectToSpawn);
 
         return objectToSpawn;
     }

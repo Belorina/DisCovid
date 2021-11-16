@@ -6,7 +6,7 @@ public class TargetPoint : MonoBehaviour
 {
 
     [Range(0.1f, 10f)]
-    public float radius = 1f;
+    private float radius = 1f;
 
     private Vector3 position;
 
