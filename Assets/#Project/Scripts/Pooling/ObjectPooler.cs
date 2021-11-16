@@ -80,7 +80,6 @@ public class ObjectPooler : MonoBehaviour
         // add back to queue
         poolDictionary[tag].Enqueue(objectToSpawn);
         
-        print(objectToSpawn);
 
         return objectToSpawn;
     }
