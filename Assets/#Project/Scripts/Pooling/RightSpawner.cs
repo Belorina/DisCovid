@@ -32,7 +32,7 @@ public float delay = 1f;    // spawning delay
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = new Color(0f, 1f, 1f, 0.4f);
+        Gizmos.color = new Color(0f, 1f, 0f, 0.4f);
         Gizmos.DrawSphere(transform.position, radius);
     }
 }
