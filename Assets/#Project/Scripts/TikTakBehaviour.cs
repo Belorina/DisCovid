@@ -13,7 +13,7 @@ public class TikTakBehaviour : MonoBehaviour
 {
     private NavMeshAgent agent;
 
-    public TargetPoint[] targetPoints = new TargetPoint[0];
+    public TargetPoint[] targetPoints = new TargetPoint[1];
     private int indexNextDestination = -1;
 
     public Vector3 destination;
