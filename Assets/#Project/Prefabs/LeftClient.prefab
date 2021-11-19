@@ -169,6 +169,6 @@ MonoBehaviour:
   - {fileID: 6242169284677339361, guid: 669fd3d12604940499e43502607fb246, type: 3}
   - {fileID: 124704894548557627, guid: 15c8280b4814ec24295373353ff92c5b, type: 3}
   - {fileID: 3839807739004679456, guid: ac6f7b9cd85bd754eb111e47311e8c3f, type: 3}
-  indexNextDestination: 0
+  indexNextDestination: -1
   actualDestination: {x: 0, y: 0, z: 0}
   clientSpeed: 2

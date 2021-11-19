@@ -16,7 +16,7 @@ public class ClientBehaviour : MonoBehaviour, IPooledObject
     public List<TargetPoint> targetPoints = new List<TargetPoint>();
 
     [SerializeField]
-    private int indexNextDestination = -1;
+    private int indexNextDestination;
 
     [SerializeField]
     private Vector3 actualDestination;
@@ -33,12 +33,20 @@ public class ClientBehaviour : MonoBehaviour, IPooledObject
         agent.autoBraking = false;                  // allows for continuous movement between points
         agent.speed = clientSpeed;
 
-        NextDestination();
+        indexNextDestination = -1;
+        
+
+
+        //NextDestination();
+
     }
 
     void Update()
     {
-        if (agent.remainingDistance <= agent.stoppingDistance)
+        print("update" + indexNextDestination);
+
+
+        if (agent.remainingDistance <= agent.stoppingDistance)      // trop rapide ?? 
         {
             print("I am here?");
             NextDestination();
@@ -48,10 +56,10 @@ public class ClientBehaviour : MonoBehaviour, IPooledObject
     private void NextDestination()
     {
         //int oldIndex = indexNextDestination;
-
-        print(indexNextDestination);
+        //print(indexNextDestination);
 
         indexNextDestination++;
+        print("++" + indexNextDestination);
         indexNextDestination = indexNextDestination % targetPoints.Count;
 
         print(indexNextDestination);
