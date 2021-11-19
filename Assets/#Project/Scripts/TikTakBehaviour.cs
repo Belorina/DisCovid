@@ -51,6 +51,8 @@ public class TikTakBehaviour : MonoBehaviour
 
         indexNextDestination++;
         indexNextDestination = indexNextDestination % targetPoints.Length;
+
+        
         destination = targetPoints[indexNextDestination].GivePoint();
         //Debug.Log("test", gameObject);
         agent.SetDestination(destination);

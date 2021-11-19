@@ -10,27 +10,30 @@ public class TargetPoint : MonoBehaviour
 
     public Vector3 position;
 
-    public TargetPoint[] targetPoints;
+    //public TargetPoint[] targetPoints;
+
+    public Vector3 point;
 
 
     public Vector3 GivePoint()
     {
         print("giving point");
         //Vector3 point = Random.insideUnitSphere * radius;
-        Vector3 point = Vector3.zero;
+        point = Vector3.zero;
 
         point.z = point.y;
         point.y = 0;
 
         point += transform.position;
         return point;
+        
     }
 
-    // void start()
-    // {
-    //     position = gameObject.transform.position;
-
-    // }
+    void start()
+    {
+        //position = gameObject.transform.position;
+        print(point);
+    }
 
     private void OnDrawGizmos()
     {

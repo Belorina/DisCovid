@@ -11,76 +11,63 @@ using UnityEngine.AI;
 public class ClientBehaviour : MonoBehaviour, IPooledObject
 {
     [SerializeField]
-    private Vector3 destination;
     private NavMeshAgent agent;
 
-    public float clientSpeed = 2f;
+    public List<TargetPoint> targetPoints = new List<TargetPoint>();
 
     [SerializeField]
     private int indexNextDestination = -1;
 
-    //public TargetPoint[] targetPoints = new TargetPoint[0];
+    [SerializeField]
+    private Vector3 actualDestination;
 
-    public TargetPoint[] targetPoints;
-
-    public Transform target;
-
+    public float clientSpeed = 2f;
 
 
 
     void start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        //position = gameObject.transform.position;
+
+        agent = gameObject.GetComponent<NavMeshAgent>();
         agent.autoBraking = false;                  // allows for continuous movement between points
+        agent.speed = clientSpeed;
 
-        clientSpeed = agent.speed;
-        destination = agent.destination;
-
-        target = TargetPoint.position;
+        NextDestination();
     }
 
-    void update()
+    void Update()
     {
-        //agent.Move(transform.forward * Time.deltaTime);
-
-        // if (agent.remainingDistance <= agent.stoppingDistance)       // where definitions variables? 
-
-        // {
-        //     NextDestination();
-        // }
-
-
-        if (Vector3.Distance(destination, target.position) > 1.0f)
+        if (agent.remainingDistance <= agent.stoppingDistance)
         {
-            targetPoints = 
-
-            targetPoints = TargetPoint.GivePoint();
-            destination = target.position;
-            agent.SetDestination(destination);
+            print("I am here?");
+            NextDestination();
         }
-
-        // //Update unit if the target moves one unit
-        // if (Vector3.Distance(destination, target.position) > 1.0f)
-        // {
-        //     destination = target.position;
-        //     agent.destination = destination;
-        // }
-
     }
 
-    public void NextDestination()
+    private void NextDestination()
     {
+        //int oldIndex = indexNextDestination;
 
+        print(indexNextDestination);
 
+        indexNextDestination++;
+        indexNextDestination = indexNextDestination % targetPoints.Count;
 
-        // indexNextDestination++;
-        // indexNextDestination = indexNextDestination % targetPoints.Length;
-        // destination = targetPoints[indexNextDestination].GivePoint();
+        print(indexNextDestination);
 
+        // while (oldIndex == indexNextDestination)         //  !!!!!!!!!   foreverLOOP
+        // {
+        //     for (int i = 0; i < targetPoints.Count; i++)
+        //     {
+        //         indexNextDestination = i;
+        //         print(i);
+        //     }
 
-        // //Debug.Log("test", gameObject);
-        // agent.SetDestination(destination);
+        actualDestination = targetPoints[indexNextDestination].GivePoint();
 
+        agent.SetDestination(actualDestination);
+        // }
     }
 
     public void OnObjectSpawn()

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e953cad9f5fc8b145847b5ea9d8a7cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  position: {x: 0, y: 0, z: 0}
   targetPoints: []
 --- !u!1 &436517023
 GameObject:
@@ -1979,7 +1979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e953cad9f5fc8b145847b5ea9d8a7cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  position: {x: 0, y: 0, z: 0}
   targetPoints: []
 --- !u!1 &762006148
 GameObject:
@@ -2024,10 +2024,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57aebb9fb834aca4b8242f6f3a7a9bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 841727637}
-  delay: 1
-  TikTakDestination: {x: -6, y: 0, z: -6}
-  spawn: {fileID: 754628170}
 --- !u!1 &818617013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2741,7 +2737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e953cad9f5fc8b145847b5ea9d8a7cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  position: {x: 0, y: 0, z: 0}
   targetPoints: []
 --- !u!1 &1045847352
 GameObject:
@@ -3621,7 +3617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e953cad9f5fc8b145847b5ea9d8a7cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  position: {x: 0, y: 0, z: 0}
   targetPoints: []
 --- !u!1 &1319707765
 GameObject:
@@ -5191,7 +5187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e953cad9f5fc8b145847b5ea9d8a7cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  position: {x: 0, y: 0, z: 0}
   targetPoints: []
 --- !u!1 &1925879872
 GameObject:
@@ -6096,7 +6092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e953cad9f5fc8b145847b5ea9d8a7cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  position: {x: 0, y: 0, z: 0}
   targetPoints: []
 --- !u!1 &2040272651
 GameObject:
@@ -6398,7 +6394,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57aebb9fb834aca4b8242f6f3a7a9bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 270874108}
-  delay: 1
-  TikTakDestination: {x: -6, y: 0, z: -6}
-  spawn: {fileID: 2038527464}

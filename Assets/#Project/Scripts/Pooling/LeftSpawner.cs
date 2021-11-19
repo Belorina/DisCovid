@@ -11,12 +11,24 @@ public class LeftSpawner : MonoBehaviour
 
     public float delay = 1f;    // spawning delay 
 
+    //public TargetPoint myTarget;
+
+    //public Vector3 clientDestination;
+
+    //public ClientBehaviour client;
 
     private void Start()
     {
         objectPooler = ObjectPooler.Instance;
 
         StartCoroutine(delaySpawn());
+
+        //myTarget = gameObject.GetComponent(typeof(TargetPoint)) as TargetPoint;
+
+        //TargetPoint[] myTargets = myTarget.targetPoints;
+
+
+        //client.destination = clientDestination;
     }
 
     private IEnumerator delaySpawn()
