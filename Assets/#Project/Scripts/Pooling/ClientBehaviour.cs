@@ -34,10 +34,7 @@ public class ClientBehaviour : MonoBehaviour, IPooledObject
         agent.speed = clientSpeed;
 
         indexNextDestination = -1;
-        
-
-
-        //NextDestination();
+    
 
     }
 
@@ -46,9 +43,8 @@ public class ClientBehaviour : MonoBehaviour, IPooledObject
         print("update" + indexNextDestination);
 
 
-        if (agent.remainingDistance <= agent.stoppingDistance)      // trop rapide ?? 
+        if (agent.remainingDistance <= agent.stoppingDistance)
         {
-            print("I am here?");
             NextDestination();
         }
     }
